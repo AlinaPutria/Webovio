@@ -67,7 +67,53 @@ p {
 }
 
 .scrolled.fade-in {
-    animation: fade-in 3s ease-in-out both;
+    animation: fade-in 2s ease-in-out both;
+}
+
+.scrolled.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+    animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .animation {
@@ -403,7 +449,7 @@ p {
 .burger-header-navigation-list-ul-li-sticky {
     border-radius: 4px;
     width: 120px;
-    height: 42px;
+    height: 38px;
     margin: 5px;
     text-align: center;
     background: #FFFFFF;
@@ -852,12 +898,6 @@ p {
         margin: 0 100px;
     }
 
-    .section-project-balenciaga-img,
-    .section-project-3D-img,
-    .section-project-booking-img {
-        width: 535px;
-    }
-
     .section-project-balenciaga,
     .section-project-booking {
         align-items: flex-start;
@@ -900,14 +940,17 @@ p {
 
     .burger-header-navigation-list {
         width: 140px;
+        right: 70px;
     }
+
     .burger-header-navigation-list-sticky.is-active.sticky {
-        top: 46px;
+        top: 47px;
         right: -30px;
         width: 140px;
         background: rgba(68, 74, 52, 0.85);
 
     }
+
     .burger-header-navigation-list-ul,
     .burger-header-navigation-list-ul-sticky {
         flex-direction: column;
@@ -919,6 +962,11 @@ p {
 
     .section-about-items-article {
         margin-right: 7px;
+    }
+    .section-project-balenciaga-img,
+    .section-project-3D-img,
+    .section-project-booking-img {
+        width: 535px;
     }
 }
 
@@ -937,46 +985,52 @@ p {
         font-size: 16px;
         line-height: 28px;
     }
+
     .header-navigation-logo,
     .header-navigation-logo-img {
         width: 200px;
         height: 31px;
     }
+
     .section-about-items-article {
         max-width: 100%;
         margin-right: 0;
         margin-bottom: 30px;
     }
+
     .section-about {
         justify-content: flex-start;
     }
+
     .section-project-article {
         justify-content: flex-start;
     }
-    
+
     .section-project-article-h2 {
         margin-bottom: 20px;
     }
+
     .section-services-items {
         justify-content: flex-start;
     }
-    .section-services-items-item {
-        margin: 0 0 30px 0;
-    }
-    .footer{
+
+    .footer {
         padding: 50px 0 0 20px;
     }
+
     .footer-links-items {
         justify-content: flex-start;
         flex-direction: column;
     }
-    
+
     .footer-links-item {
         margin: 20px 0 0 0;
     }
-    .footer-bottom{
+
+    .footer-bottom {
         padding: 25px 0;
     }
+
     .footer-bottom-p {
         margin: 0 20px;
     }
@@ -1007,9 +1061,11 @@ p {
     .swiper-container {
         height: 370px;
     }
-    .header-navigation{
+
+    .header-navigation {
         padding: 10px 0 0 0;
     }
+
     .header-padding {
         margin: 0 20px;
     }
@@ -1021,42 +1077,50 @@ p {
     .header-article-h1 {
         margin: 10px 0;
     }
+
     .section-project-balenciaga-img,
     .section-project-3D-img,
     .section-project-booking-img {
         width: 335px;
     }
+
     .section-project-balenciaga-items,
     .section-project-3D-items,
     .section-project-booking-items {
         margin-bottom: 26px;
     }
+
     .section-project-balenciaga-card,
     .section-project-3D-card,
-    .section-project-booking-card{
+    .section-project-booking-card {
         position: static;
     }
+
     .card {
         min-height: 190px;
     }
+
     .section-project-balenciaga-article-link {
         margin-top: 80px;
     }
+
     .project-article-h2 {
         margin-bottom: 20px;
     }
-    
+
     .project-article-p {
         margin-bottom: 20px;
     }
-    
+
     .project-article-link {
         margin-top: 20px;
     }
+
     .footer-bottom {
         align-items: flex-start;
         flex-direction: column;
     }
+
     .footer-bottom-p {
         margin: 15px 0;
     }
@@ -1067,16 +1131,22 @@ p {
         font-size: 30px;
         line-height: 33px;
     }
+   
+    .main{
+        padding: 0 10px;
+    }
     .section-project-balenciaga-img,
     .section-project-3D-img,
     .section-project-booking-img {
         width: 267px;
     }
+
     .footer-info {
         justify-content: flex-start;
         flex-direction: column;
     }
-    .footer-links-social-email{
+
+    .footer-links-social-email {
         font-size: 18px;
     }
 }
