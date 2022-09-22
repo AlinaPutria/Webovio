@@ -6,4 +6,4 @@ Used in the work:
 - JS;
 - Swiper: slider.
 
-![logo](https://user-images.githubusercontent.com/94079934/191823444-69acb56e-225b-4d2f-a348-07daa5907b51.png)
+![gif](https://user-images.githubusercontent.com/94079934/191829338-29d19724-1edf-47b3-9a11-ac42e574b0df.gif)
